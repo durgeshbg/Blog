@@ -12,3 +12,13 @@ app.use((req, res, next) => {
     next();
 })
 
+// Database connection using mongoose
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => {
+        app.listen(process.env.PORT, (req, res) => {
+            console.log("Connected to PORT: 4000");
+        })
+    })
+    .catch(err => console.log(err));
+
+
