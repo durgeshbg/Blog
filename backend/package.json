@@ -1,10 +1,12 @@
 {
-  "name": "blog",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "This is a blog app created using the MERN stack",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
